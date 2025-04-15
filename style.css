@@ -44,13 +44,28 @@ a {
     width: 50%;
 }
 
-/* HEADER */
-header>nav {
-    margin: auto;
+section {
+    margin: 50px 0px;
 }
 
-.inline {
-    display: inline;
+h2, h3 {
+    margin: 20px 0px;
+}
+
+p {
+    margin: 10px, 0px;
+}
+
+
+/* HEADER */
+
+.header {
+    padding: 20px 0px;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3; */
+    width: 100%;
 }
 
 /* Section Accueil */

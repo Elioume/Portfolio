@@ -10,37 +10,39 @@
 <body>
     
     <!-- HEADER -->
-    <header class="flex spaceBetween container bgGreen alignCenter">
+    <header class="container">
+        
+        <div class="flex spaceBetween alignCenter header bgGreen">
+            <!-- partie gauche header -->
+            <h2>Developpeur Web</h2>
 
-        <!-- partie gauche header -->
-        <h2>Developpeur Web</h2>
+            <nav>
+                <ul class="alignCenter flex spaceBetween">
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Mes Projets</a></li>
+                    <li><a href="">A Propos</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
 
-        <nav>
-            <ul class="alignCenter flex spaceBetween">
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Mes Projets</a></li>
-                <li><a href="">A Propos</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- partie droite header -->
-        <nav>
-            <ul class="flex spaceBetween">
-                <li><a href=""><img src="" alt="Logo Github"></a></li>
-                <li><a href=""><img src="" alt="Logo Linkedin"></a></li>
-                <li><a href=""><img src="" alt="Logo Gmail"></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-            </ul>
-        </nav>
-
+            <!-- partie droite header -->
+            <nav>
+                <ul class="flex spaceBetween">
+                    <li><a href=""><img src="" alt="Logo Github"></a></li>
+                    <li><a href=""><img src="" alt="Logo Linkedin"></a></li>
+                    <li><a href=""><img src="" alt="Logo Gmail"></a></li>
+                    <li><a href=""><img src="" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
     <!-- MAIN -->
     <main>
 
-        <!-- Accueil -->
+
+        <!-- Section Accueil -->
         <section class="flex spaceBetween container">
 
         <div>
@@ -52,7 +54,58 @@
 
         </div>
 
-        <img src="assets/IMG_0200.jpg" alt="Image Elio Assi" class="imgAccueil">
+        <img src="" alt="Image Elio" class="imgAccueil">
+
+        </section>
+
+
+        <!-- Section Projet -->
+        <section class="container">
+
+            <h2> Mes Projets</h2>
+
+            <div>
+                <a href=""><img src="" alt="img projet 1"></a>
+                <a href=""><img src="" alt="img projet 2"></a>
+                <a href=""><img src="" alt="img projet 3"></a>
+            </div>
+            
+        </section>
+
+        <!-- Section A Propos -->
+        <section class="container">
+
+            <h2>A Propos</h2>
+
+            <!-- Div Bropgraphie -->
+            <div>
+                <h3>Biographie</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae minus aliquid quis aperiam nisi repellendus sed et officia, nostrum, laudantium labore. Ab dolorem nulla ducimus assumenda vitae nostrum beatae!
+                Accusantium voluptatum tempora ab eveniet mollitia dolorem libero! Reiciendis sit magni blanditiis molestiae odit vero inventore obcaecati tempore nisi numquam. Eligendi modi porro praesentium quo repudiandae iusto inventore consequatur quaerat!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur numquam at recusandae similique excepturi ipsam beatae tempore laboriosam a porro doloremque tempora commodi, quae odit sed molestias dolor nam facilis!
+                Ipsam at laborum quidem, iusto vel totam ea explicabo aut ab deserunt, officiis error eos amet expedita? Recusandae rerum libero nisi eius optio doloremque accusamus corrupti ab, unde eum cupiditate.</p>
+            </div>
+
+            <!-- Div Compétences -->
+            <div>
+                <h3>Mes Comptétences</h3>
+
+                <ul>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                </ul>
+
+            </div>
+
+            <!-- Div Parcours -->
+            <div>
+                <h3>Mon Parcours</h3>
+                <p>La Toile</p>
+            </div>
 
         </section>
 
@@ -60,8 +113,16 @@
 
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="container">
+        <h2>Me contacter</h2>
 
+        <input type="text" placeholder="Prénom" minlength="1">
+        <input type="text" placeholder="Nom" minlength="1">
+        <input type="text" placeholder="Sujet" minlength="1">
+        <input type="email" placeholder="Email" minlength="1">
+        <input type="text" placeholder="Votre Message" minlength="1" size="30">
+
+        <a href="">Envoyer</a>
     </footer>
 
 
