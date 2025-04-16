@@ -10,14 +10,14 @@
 <body>
     
     <!-- HEADER -->
-    <header class="container">
+    <header>
         
-        <div class="flex spaceBetween alignCenter header bgGreen">
+        <div class="flex spaceBetween alignCenter header">
             <!-- partie gauche header -->
-            <h2 class="mHeader">Developpeur Web</h2>
+            <h3 class="mHeader titreHeader">Developpeur Web</h3>
 
             <nav>
-                <ul class="alignCenter flex spaceBetween">
+                <ul class="alignCenter flex spaceBetween fszA">
                     <li class="mHeader"><a href="">Accueil</a></li>
                     <li class="mHeader"><a href="">Mes Projets</a></li>
                     <li class="mHeader"><a href="">A Propos</a></li>
@@ -28,10 +28,10 @@
             <!-- partie droite header -->
             <nav>
                 <ul class="flex spaceBetween">
-                    <li class="mHeader"><a href=""><img src="assets/logo facebook.png" alt="Logo Github"></a></li>
-                    <li class="mHeader"><a href=""><img src="assets/logo linkedin.png" alt="Logo Linkedin"></a></li>
-                    <li class="mHeader"><a href=""><img src="assets/logo instagram.png" alt="Logo Gmail"></a></li>
-                    <li class="mHeader"><a href=""><img src="assets/logo twitter.png" alt="Logo Twitter"></a></li>
+                    <li class="mHeader"><a href=""><img src="assets/Platform=Github, Color=Original.png" alt="Logo Github" width="30"></a></li>
+                    <li class="mHeader"><a href=""><img src="assets/Platform=LinkedIn, Color=Original.png" alt="Logo Linkedin" width="30"></a></li>
+                    <li class="mHeader"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img src="assets/Platform=Spotify, Color=Original.png" alt="Logo Spotify" width="30"></a></li>
+                    <li class="mHeader"><a href=""><img src="assets/Platform=X (Twitter), Color=Original.png" alt="Logo Twitter" width="30"></a></li>
                 </ul>
             </nav>
         </div>
@@ -43,18 +43,18 @@
 
 
         <!-- Section Accueil -->
-        <section class="flex spaceBetween container">
+        <section class="flex spaceBetween container mAccueil">
 
-        <div class="bgGreen txtCenter aCenter">
+        <div class="txtCenter aCenter">
 
-            <h1 class="oui">Je suis Elio PECHILLON, je suis un Developpeur Web</h1>
+            <h1 class="oui">Je suis elio PECHILLON, je suis un Developpeur Web</h1>
 
             <!-- boutons -->
             <a href="" class="btn1">Téléchargez mon CV</a>
 
         </div>
 
-        <img src="assets/placeholder.jpg" alt="Image Elio" class="imgTaille">
+        <img src="assets/elio-removebg-preview.png" alt="Image Elio" class="imgTaille">
 
         </section>
 
@@ -64,49 +64,120 @@
 
             <h2> Mes Projets</h2>
 
-            <div class="flex spaceEvenly">
-                <a href=""><img src="assets/placeholder.jpg" alt="img projet 1" class="imgTaille"></a>
-                <a href=""><img src="assets/placeholder.jpg" alt="img projet 2" class="imgTaille"></a>
-                <a href=""><img src="assets/placeholder.jpg" alt="img projet 3" class="imgTaille"></a>
-            </div>
+            <div class="sliderProjets-container">
+                <div class="slider-projets">
+                  <!-- projet 1 -->
+                  <div class="projet-item">
+                    <img
+                    src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Image 1"
+                  />
+                    <div class="projet-details">
+                      <h3>Projet 1</h3>
+                      <p>Projet de design d'interface</p>
+                      <a href="" class="btn">Découvrir le projet </a>
+                    </div>
+                  </div>
+                  <!-- projet 2 -->
+                  <div class="projet-item">
+                          <img
+                          src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                          alt="Image 1"
+                        />
+                          <div class="projet-details">
+                            <h3>Projet 1</h3>
+                            <p>Projet de design d'interface</p>
+                            <a href="" class="btn">Découvrir le projet </a>
+                          </div>
+                  </div>
+                  <!-- projet 3 -->
+                  <div class="projet-item">
+                      <img
+                      src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt="Image 1"
+                    />
+                      <div class="projet-details">
+                        <h3>Projet 1</h3>
+                        <p>Projet de design d'interface</p>
+                        <a href="" class="btn">Découvrir le projet </a>
+                      </div>
+                  </div>
+                  <!-- projet 4 -->
+                  <div class="projet-item">
+                      <img
+                      src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt="Image 1"
+                    />
+                      <div class="projet-details">
+                        <h3>Projet 1</h3>
+                        <p>Projet de design d'interface</p>
+                        <a href="" class="btn">Découvrir le projet </a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              
             
         </section>
 
         <!-- Section A Propos -->
-        <section class="container">
+        <section class="bgPurple">
 
-            <h2>A Propos</h2>
+            <div class="container">
+                <h2 class="white">A Propos</h2>
 
-            <!-- Div Bropgraphie -->
-            <div>
-                <h3>Biographie</h3>
+                <div class="flex spaceBetween white">
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae minus aliquid quis aperiam nisi repellendus sed et officia, nostrum, laudantium labore. Ab dolorem nulla ducimus assumenda vitae nostrum beatae!
-                Accusantium voluptatum tempora ab eveniet mollitia dolorem libero! Reiciendis sit magni blanditiis molestiae odit vero inventore obcaecati tempore nisi numquam. Eligendi modi porro praesentium quo repudiandae iusto inventore consequatur quaerat!</p>
+                    <!-- partie gauche -->
+                    <div class="flexPropo">
+                        <!-- Div Bropgraphie -->
+                        <div>
+                            <h3 class="white">Biographie</h3>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur numquam at recusandae similique excepturi ipsam beatae tempore laboriosam a porro doloremque tempora commodi, quae odit sed molestias dolor nam facilis!
-                Ipsam at laborum quidem, iusto vel totam ea explicabo aut ab deserunt, officiis error eos amet expedita? Recusandae rerum libero nisi eius optio doloremque accusamus corrupti ab, unde eum cupiditate.</p>
+                            <p class="white propoP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae minus aliquid quis aperiam nisi repellendus sed et officia, nostrum, laudantium labore. Ab dolorem nulla ducimus assumenda vitae nostrum beatae!
+                            Accusantium voluptatum tempora ab eveniet mollitia dolorem libero! Reiciendis sit magni blanditiis molestiae odit vero inventore obcaecati tempore nisi numquam. Eligendi modi porro praesentium quo repudiandae iusto inventore consequatur quaerat!</p>
+
+                            <p class="white propoP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur numquam at recusandae similique excepturi ipsam beatae tempore laboriosam a porro doloremque tempora commodi, quae odit sed molestias dolor nam facilis!
+                            Ipsam at laborum quidem, iusto vel totam ea explicabo aut ab deserunt, officiis error eos amet expedita? Recusandae rerum libero nisi eius optio doloremque accusamus corrupti ab, unde eum cupiditate.</p>
+                        </div>
+                    </div>
+
+                    <!-- partie droite -->
+                    <div class="flexPropo white">
+                        <!-- Div Compétences -->
+                        <div>
+                            <h3 class="white">Mes Comptetences</h3>
+
+                            <ul class="flex spaceStart">
+                                <li><img src="assets/Html.png" alt="Logo HTML" class="marginPropo" width="50"></li>
+                                <li><img src="assets/css-3.png" alt="Logo CSS" class="marginPropo" width="55"></li>
+                                <li><img src="assets/java-script.png" alt="Logo Java Script" class="marginPropo" width="55"></li>
+                                <li><img src="assets/Platform=Github, Color=Original.png" alt="Logo Github" class="marginPropo"></li>
+                                <li><img src="assets/figma.png" alt="Logo Figma" class="marginPropo"></li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Div Parcours -->
+                        <div>
+                            <h3 class="white">Mon Parcours</h3>
+
+                            <!-- Boite a copier -->
+                            <div class="boiteParcours">
+                                <p class="boiteParcoursTxtSize1">Formation La Toile</p>
+                                <p class="boiteParcoursTxtSize2">Mars 2025 - Juillet 2025</p>
+                            </div>
+
+                        </div>
+
+                        <div class="boiteParcours">
+                            <p class="boiteParcoursTxtSize1">Ecole de la seconde chance</p>
+                            <p class="boiteParcoursTxtSize2">2024</p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-
-            <!-- Div Compétences -->
-            <div>
-                <h3>Mes Comptétences</h3>
-
-                <ul>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                </ul>
-
-            </div>
-
-            <!-- Div Parcours -->
-            <div>
-                <h3>Mon Parcours</h3>
-                <p>La Toile</p>
-            </div>
-
         </section>
 
     </main>
@@ -126,6 +197,29 @@
     </footer>
 
 
+    
+    <script>
+        const container = document.querySelector('.sliderProjets-container');
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      container.addEventListener('dragstart', (e) => e.preventDefault());
+      container.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        container.classList.add('dragging');
+        startX = e.clientX;
+        scrollStart = container.scrollLeft;
+      });
+      document.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        const delta = e.clientX - startX;
+        container.scrollLeft = scrollStart - delta;
+      });
+      document.addEventListener('mouseup', () => {
+        isDragging = false;
+        container.classList.remove('dragging');
+      });
+      </script>
 
 </body>
 </html>

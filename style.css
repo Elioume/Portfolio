@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+body{
+    background-color: #fcf6ea;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -33,10 +37,58 @@
 }
 
 /* Text + Font */
+@font-face {
+    font-family: "japan";
+    src: url(Fonts/JAPAN.ttf) format('truetype');
+}
+
+.titreHeader {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h2, h3 {
+    margin: 20px 0px;
+}
+
+h1, h2, h3 {
+    font-family: "japan";
+    position: relative;
+    z-index: 2;
+}
+
+h2::before {
+    display: block;
+    content: "";
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+    background-color: #E70F0E;
+    position:absolute;
+    left: -16px;
+    top:-16px;
+    z-index: -1;
+}
+
+p {
+    margin: 10px, 0px;
+    font-size: 20px;
+}
 
 a {
     color: black;
     text-decoration: none;
+}
+
+.fszA {
+    font-size: 20px;
+}
+
+.white {
+    color: #e1decc;
 }
 
 /* Tailles */
@@ -52,24 +104,20 @@ section {
     margin: 50px 0px;
 }
 
-h2, h3 {
-    margin: 20px 0px;
-}
-
-p {
-    margin: 10px, 0px;
-}
-
 
 /* HEADER */
+header {
+    border-bottom: solid 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    backdrop-filter: blur(6px);
+}
 
 .header {
     padding: 20px 0px;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3; */
-    width: 100%;
 }
 
 .mHeader {
@@ -78,7 +126,11 @@ p {
 
 /* Section Accueil */
 .imgTaille {
-    width: 400px;
+    width: 200px;
+}
+
+.mAccueil {
+    margin-top: 100px;
 }
 
 .txtCenter {
@@ -86,13 +138,100 @@ p {
 }
 
 .btn1 {
-    background-color: blue;
+    background-color: #E70F0E;
     padding: 20px;
     border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
 }
 
 /* section Mes Projets */
 
 .spaceEvenly {
     justify-content: space-evenly;
+}
+
+
+/* Conteneur principal du slider de projets */
+.sliderProjets-container {
+    display: flex; /* Affichage en flexbox horizontal */
+    gap: 20px; /* Espace entre les éléments enfants */
+    overflow-x: scroll; /* Permet le défilement horizontal */
+    scroll-snap-type: x mandatory; /* Défilement fluide avec arrêt sur chaque élément */
+   
+}
+
+/* Sous-conteneur des projets dans le slider */
+.slider-projets {
+    display: flex; /* Affichage en flexbox horizontal */
+    gap: 20px; /* Espace entre les projets */
+    width: 500px; /* Largeur fixe */
+    flex-shrink: 0; /* Empêche le rétrécissement de l'élément dans sa largeur. en gros on autorise les enfants a déborder */
+    cursor: pointer; /* Change le curseur au survol */
+}
+
+/* Style individuel pour chaque projet */
+.projet-item {
+    width: 500px; /* Largeur fixe */
+    flex-shrink: 0; /* Empêche le rétrécissement de l'élément */
+    cursor: pointer; /* Change le curseur au survol */
+    background-color: #ffffff; 
+  /*  padding: 10px; */
+   /* border-radius: 8px; */
+   border-left: solid 15px #E70F0E;
+}
+
+.projet-details{
+    padding: 16px;
+}
+
+/* Style des images dans chaque projet */
+.projet-item img {
+    width: 100%; 
+    display: block; /* Supprime les espaces blancs en bas de l'image */
+}
+
+.scroll-container {
+    user-select: none;
+}
+
+/* Section A Propos */
+.flexPropo {
+    width: 48%;
+}
+
+.flexStart {
+    justify-content: flex-start;
+}
+
+.marginPropo {
+    margin: 0px 10px;
+}
+
+.bgPurple {
+    background-color: #474145;
+    padding: 30px 0px;
+}
+
+.propoP {
+    margin: 20px 0px;
+}
+
+.boiteParcours {
+    border: solid rgba(0, 0, 0, 0.669);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e1decc65;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.boiteParcoursTxtSize2 {
+    font-size: 15px;
+    padding: 10px 0px 5px 10px;
+}
+
+.boiteParcoursTxtSize1 {
+    padding: 5px 0px 0px 10px;
 }
