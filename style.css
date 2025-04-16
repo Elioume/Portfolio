@@ -18,6 +18,10 @@
     align-items: center;
 }   
 
+.aCenter {
+    align-content: center;
+}
+
 .container {
     max-width: 1100px;
     margin-left: auto;
@@ -68,7 +72,27 @@ p {
     width: 100%;
 }
 
+.mHeader {
+    margin: 0px 5px;
+}
+
 /* Section Accueil */
-.imgAccueil {
-    width: 300px;
+.imgTaille {
+    width: 400px;
+}
+
+.txtCenter {
+    text-align: center;
+}
+
+.btn1 {
+    background-color: blue;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* section Mes Projets */
+
+.spaceEvenly {
+    justify-content: space-evenly;
 }
